@@ -3,7 +3,7 @@ import pandas as pd
 def main():
     try:
         # Load the data
-        data = pd.read_csv('cell-count.csv')
+        data = pd.read_csv('data/cell-count.csv')
 
         # Display the first few rows of the data frame
         print("Succesfully loaded data:")

@@ -4,4 +4,4 @@ services:
     build: .
     volumes:
       - .:/usr/src/app
-    command: python scripts/starter_test.py
+    command: python scripts/percent_cell_count.py
