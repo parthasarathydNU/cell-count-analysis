@@ -1,6 +1,6 @@
 version: '3.8'
 services:
-  analysis:
+  task-1:
     build: .
     volumes:
       - .:/usr/src/app

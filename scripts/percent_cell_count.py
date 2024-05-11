@@ -7,7 +7,7 @@ try:
     data = pd.read_csv('data/cell-count.csv')
 
     # Display the first few rows of the data frame
-    print("Succesfully loaded data:")
+    print("===============Succesfully loaded data:===============")
     print(data.head())
 
     # Basic Operation: Calculate the total number of samples
@@ -37,5 +37,8 @@ try:
 
     # Save the processed data to a new CSV file
     output.to_csv("data/updated-cell-count.csv", index=False)
+
+    print("===============Succesfully uploaded data to data/updated-cell-count.csv:===============")
+    print(output.head())
 except Exception as e:
     print(f"An error occured: {e}")
