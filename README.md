@@ -3,13 +3,16 @@
 ## Project Overview
 This project involves analyzing immune cell count data from various samples to determine relative frequencies of different cell populations and to explore differences between responders and non-responders to a specific treatment (tr1) in melanoma patients. The analysis is performed using Python with libraries like Pandas, Matplotlib, and Seaborn.
 
-For **detailed insights and analysis** check out the following notebook `notebooks/treatment_analysis.ipynb`. For an executive summary check out `Insights.md`
+### Tasks 
+- For **detailed insights and analysis** check out the following notebook `notebooks/treatment_analysis.ipynb`. 
+- For an executive summary check out `Insights.md`
+- For the task related to database design refer file `DatabaseSchemaDesign.md`
 
 ## Getting Started
 
 ### Prerequisites
-- Docker
-- Docker Compose
+- Docker (optional)
+- Docker Compose (optional)
 - Git (optional, for cloning the repository)
 
 ### Installation
