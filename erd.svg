@@ -1,0 +1,315 @@
+<svg version="1.1" baseProfile="full" width="800.5" height="756.0" viewbox="0 0 800.5 756" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events">
+	<desc >#background: #FFFFFF
+	[Project|project_id: int (PK)|project_name: string|start_date: datetime|end_date: datetime|principal_investigator: string]
+	[Patient|patient_id: int (PK)|gender: string|age: int|diagnosis_date: datetime]
+	[Sample|sample_id: int (PK)|sample_type: string|collection_date: datetime|time_from_treatment_start: datetime|FK project_id: int|FK patient_id: int]
+	[Treatment|treatment_id: int (PK)|treatment_name: string|treatment_type: string]
+	[Patient_Treatment|FK patient_id: int|FK treatment_id: int|start_date: datetime|end_date: datetime|response: string]
+	[Cell_Count|FK sample_id: int|b_cell_count: int|cd8_t_cell_count: int|cd4_t_cell_count: int|nk_cell_count: int|monocyte_count: int]
+	
+	[Project] 1 -&gt; * [Sample]
+	[Patient] 1 -&gt; * [Sample]
+	[Patient] 1 -&gt; * [Patient_Treatment]
+	[Treatment] 1 -&gt; * [Patient_Treatment]
+	[Sample] 1 -&gt; 1 [Cell_Count]</desc>
+	<g stroke-width="1.0" text-align="left" font="12pt Helvetica, Arial, sans-serif" font-size="12pt" font-family="Helvetica" font-weight="normal" font-style="normal">
+		<g font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" stroke-width="3.0" stroke-linejoin="round" stroke-linecap="round" stroke="#33322E">
+			<g stroke="transparent" fill="#FFFFFF">
+				<rect x="0.0" y="0.0" height="756.0" width="800.5" stroke="none"></rect>
+			</g>
+			<g transform="translate(8, 8)" fill="#33322E">
+				<g transform="translate(20, 20)" fill="#33322E" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal">
+					<text x="113.0" y="206.0" stroke="none">1</text>
+					<text x="142.1" y="218.0" stroke="none">*</text>
+					<path d="M131.0 186.0 L131 206 L133.08757095833684 219.41264340731416 L133.1 219.4 " fill="none"></path>
+					<path d="M126.8 213.6 L133.1 219.4 L137.3 212.0 L134.1 226.0 Z"></path>
+					<text x="328.2" y="190.5" stroke="none">1</text>
+					<text x="248.7" y="218.0" stroke="none">*</text>
+					<path d="M320.2 170.5 L284.5 206 L268.52492322009306 221.37675929751342 L268.5 221.4 " fill="none"></path>
+					<path d="M269.6 212.9 L268.5 221.4 L277.0 220.6 L263.7 226.0 Z"></path>
+					<text x="451.0" y="190.5" stroke="none">1</text>
+					<text x="546.0" y="236.0" stroke="none">*</text>
+					<path d="M469.0 170.5 L501.5 206 L533.3803966590845 239.17110097726604 L533.4 239.2 " fill="none"></path>
+					<path d="M524.9 238.1 L533.4 239.2 L532.6 230.7 L538.0 244.0 Z"></path>
+					<text x="653.0" y="175.0" stroke="none">1</text>
+					<text x="624.5" y="233.5" stroke="none">*</text>
+					<path d="M645.0 155.0 L645 206 L640.4999776797954 234.91264340731416 L640.5 234.9 " fill="none"></path>
+					<path d="M636.3 227.5 L640.5 234.9 L646.8 229.1 L639.5 241.5 Z"></path>
+					<text x="159.0" y="463.0" stroke="none">1</text>
+					<text x="133.0" y="475.0" stroke="none">1</text>
+					<path d="M151.0 443.0 L151 463 L151 476.3333333333333 L151.0 476.3 " fill="none"></path>
+					<path d="M145.7 469.7 L151.0 476.3 L156.3 469.7 L151.0 483.0 Z"></path>
+					<g data-name="Project">
+						<g fill="#eee8d5" stroke="#33322E" data-name="Project">
+							<rect x="11.5" y="0.0" height="186.0" width="239.0" data-name="Project"></rect>
+							<path d="M11.5 31.0 L250.5 31.0" fill="none" data-name="Project"></path>
+							<path d="M11.5 62.0 L250.5 62.0" fill="none" data-name="Project"></path>
+							<path d="M11.5 93.0 L250.5 93.0" fill="none" data-name="Project"></path>
+							<path d="M11.5 124.0 L250.5 124.0" fill="none" data-name="Project"></path>
+							<path d="M11.5 155.0 L250.5 155.0" fill="none" data-name="Project"></path>
+						</g>
+						<g transform="translate(11.5, 0)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="Project">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="Project">
+								<text x="111.5" y="13.5" stroke="none" text-anchor="middle" data-name="Project">Project</text>
+								
+							</g>
+						</g>
+						<g transform="translate(11.5, 31)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Project">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Project">
+								<text x="0.0" y="13.5" stroke="none" data-name="Project">project_id: int (PK)</text>
+								
+							</g>
+						</g>
+						<g transform="translate(11.5, 62)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Project">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Project">
+								<text x="0.0" y="13.5" stroke="none" data-name="Project">project_name: string</text>
+								
+							</g>
+						</g>
+						<g transform="translate(11.5, 93)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Project">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Project">
+								<text x="0.0" y="13.5" stroke="none" data-name="Project">start_date: datetime</text>
+								
+							</g>
+						</g>
+						<g transform="translate(11.5, 124)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Project">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Project">
+								<text x="0.0" y="13.5" stroke="none" data-name="Project">end_date: datetime</text>
+								
+							</g>
+						</g>
+						<g transform="translate(11.5, 155)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Project">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Project">
+								<text x="0.0" y="13.5" stroke="none" data-name="Project">principal_investigator: string</text>
+								
+							</g>
+						</g>
+					</g>
+					<g data-name="Patient">
+						<g fill="#eee8d5" stroke="#33322E" data-name="Patient">
+							<rect x="290.5" y="15.5" height="155.0" width="215.0" data-name="Patient"></rect>
+							<path d="M290.5 46.5 L505.5 46.5" fill="none" data-name="Patient"></path>
+							<path d="M290.5 77.5 L505.5 77.5" fill="none" data-name="Patient"></path>
+							<path d="M290.5 108.5 L505.5 108.5" fill="none" data-name="Patient"></path>
+							<path d="M290.5 139.5 L505.5 139.5" fill="none" data-name="Patient"></path>
+						</g>
+						<g transform="translate(290.5, 15.5)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="Patient">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="Patient">
+								<text x="99.5" y="13.5" stroke="none" text-anchor="middle" data-name="Patient">Patient</text>
+								
+							</g>
+						</g>
+						<g transform="translate(290.5, 46.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Patient">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Patient">
+								<text x="0.0" y="13.5" stroke="none" data-name="Patient">patient_id: int (PK)</text>
+								
+							</g>
+						</g>
+						<g transform="translate(290.5, 77.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Patient">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Patient">
+								<text x="0.0" y="13.5" stroke="none" data-name="Patient">gender: string</text>
+								
+							</g>
+						</g>
+						<g transform="translate(290.5, 108.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Patient">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Patient">
+								<text x="0.0" y="13.5" stroke="none" data-name="Patient">age: int</text>
+								
+							</g>
+						</g>
+						<g transform="translate(290.5, 139.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Patient">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Patient">
+								<text x="0.0" y="13.5" stroke="none" data-name="Patient">diagnosis_date: datetime</text>
+								
+							</g>
+						</g>
+					</g>
+					<g data-name="Sample">
+						<g fill="#eee8d5" stroke="#33322E" data-name="Sample">
+							<rect x="0.0" y="226.0" height="217.0" width="302.0" data-name="Sample"></rect>
+							<path d="M0.0 257.0 L302.0 257.0" fill="none" data-name="Sample"></path>
+							<path d="M0.0 288.0 L302.0 288.0" fill="none" data-name="Sample"></path>
+							<path d="M0.0 319.0 L302.0 319.0" fill="none" data-name="Sample"></path>
+							<path d="M0.0 350.0 L302.0 350.0" fill="none" data-name="Sample"></path>
+							<path d="M0.0 381.0 L302.0 381.0" fill="none" data-name="Sample"></path>
+							<path d="M0.0 412.0 L302.0 412.0" fill="none" data-name="Sample"></path>
+						</g>
+						<g transform="translate(0, 226)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="Sample">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="Sample">
+								<text x="143.0" y="13.5" stroke="none" text-anchor="middle" data-name="Sample">Sample</text>
+								
+							</g>
+						</g>
+						<g transform="translate(0, 257)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Sample">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Sample">
+								<text x="0.0" y="13.5" stroke="none" data-name="Sample">sample_id: int (PK)</text>
+								
+							</g>
+						</g>
+						<g transform="translate(0, 288)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Sample">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Sample">
+								<text x="0.0" y="13.5" stroke="none" data-name="Sample">sample_type: string</text>
+								
+							</g>
+						</g>
+						<g transform="translate(0, 319)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Sample">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Sample">
+								<text x="0.0" y="13.5" stroke="none" data-name="Sample">collection_date: datetime</text>
+								
+							</g>
+						</g>
+						<g transform="translate(0, 350)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Sample">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Sample">
+								<text x="0.0" y="13.5" stroke="none" data-name="Sample">time_from_treatment_start: datetime</text>
+								
+							</g>
+						</g>
+						<g transform="translate(0, 381)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Sample">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Sample">
+								<text x="0.0" y="13.5" stroke="none" data-name="Sample">FK project_id: int</text>
+								
+							</g>
+						</g>
+						<g transform="translate(0, 412)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Sample">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Sample">
+								<text x="0.0" y="13.5" stroke="none" data-name="Sample">FK patient_id: int</text>
+								
+							</g>
+						</g>
+					</g>
+					<g data-name="Treatment">
+						<g fill="#eee8d5" stroke="#33322E" data-name="Treatment">
+							<rect x="545.5" y="31.0" height="124.0" width="199.0" data-name="Treatment"></rect>
+							<path d="M545.5 62.0 L744.5 62.0" fill="none" data-name="Treatment"></path>
+							<path d="M545.5 93.0 L744.5 93.0" fill="none" data-name="Treatment"></path>
+							<path d="M545.5 124.0 L744.5 124.0" fill="none" data-name="Treatment"></path>
+						</g>
+						<g transform="translate(545.5, 31)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="Treatment">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="Treatment">
+								<text x="91.5" y="13.5" stroke="none" text-anchor="middle" data-name="Treatment">Treatment</text>
+								
+							</g>
+						</g>
+						<g transform="translate(545.5, 62)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Treatment">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Treatment">
+								<text x="0.0" y="13.5" stroke="none" data-name="Treatment">treatment_id: int (PK)</text>
+								
+							</g>
+						</g>
+						<g transform="translate(545.5, 93)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Treatment">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Treatment">
+								<text x="0.0" y="13.5" stroke="none" data-name="Treatment">treatment_name: string</text>
+								
+							</g>
+						</g>
+						<g transform="translate(545.5, 124)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Treatment">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Treatment">
+								<text x="0.0" y="13.5" stroke="none" data-name="Treatment">treatment_type: string</text>
+								
+							</g>
+						</g>
+					</g>
+					<g data-name="Patient_Treatment">
+						<g fill="#eee8d5" stroke="#33322E" data-name="Patient_Treatment">
+							<rect x="538.0" y="241.5" height="186.0" width="174.0" data-name="Patient_Treatment"></rect>
+							<path d="M538.0 272.5 L712.0 272.5" fill="none" data-name="Patient_Treatment"></path>
+							<path d="M538.0 303.5 L712.0 303.5" fill="none" data-name="Patient_Treatment"></path>
+							<path d="M538.0 334.5 L712.0 334.5" fill="none" data-name="Patient_Treatment"></path>
+							<path d="M538.0 365.5 L712.0 365.5" fill="none" data-name="Patient_Treatment"></path>
+							<path d="M538.0 396.5 L712.0 396.5" fill="none" data-name="Patient_Treatment"></path>
+						</g>
+						<g transform="translate(538, 241.5)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="Patient_Treatment">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="Patient_Treatment">
+								<text x="79.0" y="13.5" stroke="none" text-anchor="middle" data-name="Patient_Treatment">Patient_Treatment</text>
+								
+							</g>
+						</g>
+						<g transform="translate(538, 272.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Patient_Treatment">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Patient_Treatment">
+								<text x="0.0" y="13.5" stroke="none" data-name="Patient_Treatment">FK patient_id: int</text>
+								
+							</g>
+						</g>
+						<g transform="translate(538, 303.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Patient_Treatment">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Patient_Treatment">
+								<text x="0.0" y="13.5" stroke="none" data-name="Patient_Treatment">FK treatment_id: int</text>
+								
+							</g>
+						</g>
+						<g transform="translate(538, 334.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Patient_Treatment">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Patient_Treatment">
+								<text x="0.0" y="13.5" stroke="none" data-name="Patient_Treatment">start_date: datetime</text>
+								
+							</g>
+						</g>
+						<g transform="translate(538, 365.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Patient_Treatment">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Patient_Treatment">
+								<text x="0.0" y="13.5" stroke="none" data-name="Patient_Treatment">end_date: datetime</text>
+								
+							</g>
+						</g>
+						<g transform="translate(538, 396.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Patient_Treatment">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Patient_Treatment">
+								<text x="0.0" y="13.5" stroke="none" data-name="Patient_Treatment">response: string</text>
+								
+							</g>
+						</g>
+					</g>
+					<g data-name="Cell_Count">
+						<g fill="#eee8d5" stroke="#33322E" data-name="Cell_Count">
+							<rect x="61.0" y="483.0" height="217.0" width="180.0" data-name="Cell_Count"></rect>
+							<path d="M61.0 514.0 L241.0 514.0" fill="none" data-name="Cell_Count"></path>
+							<path d="M61.0 545.0 L241.0 545.0" fill="none" data-name="Cell_Count"></path>
+							<path d="M61.0 576.0 L241.0 576.0" fill="none" data-name="Cell_Count"></path>
+							<path d="M61.0 607.0 L241.0 607.0" fill="none" data-name="Cell_Count"></path>
+							<path d="M61.0 638.0 L241.0 638.0" fill="none" data-name="Cell_Count"></path>
+							<path d="M61.0 669.0 L241.0 669.0" fill="none" data-name="Cell_Count"></path>
+						</g>
+						<g transform="translate(61, 483)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="Cell_Count">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="Cell_Count">
+								<text x="82.0" y="13.5" stroke="none" text-anchor="middle" data-name="Cell_Count">Cell_Count</text>
+								
+							</g>
+						</g>
+						<g transform="translate(61, 514)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Cell_Count">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Cell_Count">
+								<text x="0.0" y="13.5" stroke="none" data-name="Cell_Count">FK sample_id: int</text>
+								
+							</g>
+						</g>
+						<g transform="translate(61, 545)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Cell_Count">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Cell_Count">
+								<text x="0.0" y="13.5" stroke="none" data-name="Cell_Count">b_cell_count: int</text>
+								
+							</g>
+						</g>
+						<g transform="translate(61, 576)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Cell_Count">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Cell_Count">
+								<text x="0.0" y="13.5" stroke="none" data-name="Cell_Count">cd8_t_cell_count: int</text>
+								
+							</g>
+						</g>
+						<g transform="translate(61, 607)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Cell_Count">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Cell_Count">
+								<text x="0.0" y="13.5" stroke="none" data-name="Cell_Count">cd4_t_cell_count: int</text>
+								
+							</g>
+						</g>
+						<g transform="translate(61, 638)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Cell_Count">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Cell_Count">
+								<text x="0.0" y="13.5" stroke="none" data-name="Cell_Count">nk_cell_count: int</text>
+								
+							</g>
+						</g>
+						<g transform="translate(61, 669)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Cell_Count">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Cell_Count">
+								<text x="0.0" y="13.5" stroke="none" data-name="Cell_Count">monocyte_count: int</text>
+								
+							</g>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>
