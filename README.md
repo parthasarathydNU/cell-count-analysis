@@ -32,6 +32,14 @@ This project involves analyzing immune cell count data from various samples to d
    - Check url printed in the console and follow the link in your browser to access the notebook
    - Navigate to `notebooks` and double click on the `treatment_analysis.ipynb` file to open and view the notebook in your browser
 
+
+3. **Running as docker container**
+   - Run the following command in the working directory of this project
+   - To build and run the containers for the first time run the command `docker compose up --build`
+   - To re run the containers after editing any of the scripts run the command `docker compose up`
+   - Logs will be displayed in the terminal. Check out `sample_logs.md` for sample logs
+
+
 ### File Structure
 - `scripts/`: Contains Python scripts for data analysis.
   - `analyze.py`: Script to calculate relative frequencies of cell counts.

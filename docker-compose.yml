@@ -5,3 +5,8 @@ services:
     volumes:
       - .:/usr/src/app
     command: python scripts/percent_cell_count.py
+  task-2:
+    build: .
+    volumes:
+      - .:/usr/src/app
+    command: python scripts/treatment_analysis.py
