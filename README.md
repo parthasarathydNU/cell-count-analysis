@@ -54,7 +54,7 @@ This project involves analyzing immune cell count data from various samples to d
 Feel free to fork the repository and submit pull requests. You can also open an issue if you find any bugs or have suggestions for further improvements.
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
 ## Authors
 - Dhruv Parthasarathy
