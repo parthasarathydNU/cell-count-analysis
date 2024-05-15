@@ -42,9 +42,9 @@ This project involves analyzing immune cell count data from various samples to d
 
 ### File Structure
 - `scripts/`: Contains Python scripts for data analysis.
-  - `analyze.py`: Script to calculate relative frequencies of cell counts.
-  - `statistics_analysis.py`: Script to analyze differences in cell populations.
-- `results/`: Contains outputs from the scripts, including CSV files and plots.
+  - `percent_cell_count.py`: Script to calculate relative frequencies of cell counts.
+  - `treatment_analysis.py`: Script to analyze differences in cell populations.
+- `results/plots`: Contains outputs from the scripts, including CSV files and plots.
 - `Dockerfile`: Defines the Docker container setup.
 - `docker-compose.yml`: Configures services, networks, and volumes for Docker.
 - `requirements.txt`: Lists Python package dependencies.
