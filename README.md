@@ -3,6 +3,8 @@
 ## Project Overview
 This project involves analyzing immune cell count data from various samples to determine relative frequencies of different cell populations and to explore differences between responders and non-responders to a specific treatment (tr1) in melanoma patients. The analysis is performed using Python with libraries like Pandas, Matplotlib, and Seaborn.
 
+For **detailed insights and analysis** check out the following notebook `notebooks/treatment_analysis.ipynb`. For an executive summary check out `Insights.md`
+
 ## Getting Started
 
 ### Prerequisites
@@ -17,10 +19,15 @@ This project involves analyzing immune cell count data from various samples to d
    cd cell-count-analysis
    ```
 
-2. **Build and run the application using Docker Compose:**
-   ```bash
-   docker-compose up --build
-   ```
+2. **Install packages and access notebook:**
+   - Set up virtual environment and activate it
+   - Install the packages listed in the `requirements.txt` file
+   - Run the following command to start jupyter lab in the working directory of this application
+      ```bash
+      jupyter lab
+      ```
+   - Check url printed in the console and follow the link in your browser to access the notebook
+   - Navigate to `notebooks` and double click on the `treatment_analysis.ipynb` file to open and view the notebook in your browser
 
 ### File Structure
 - `scripts/`: Contains Python scripts for data analysis.
@@ -31,8 +38,6 @@ This project involves analyzing immune cell count data from various samples to d
 - `docker-compose.yml`: Configures services, networks, and volumes for Docker.
 - `requirements.txt`: Lists Python package dependencies.
 
-## Usage
-With Docker Compose, your application will be built and started by running the command mentioned in the Installation section. This will execute the scripts as configured in `docker-compose.yml`. You can edit this file to change which scripts are run or to adjust other settings such as port mapping and volume mounting.
 
 ## Contributing
 Feel free to fork the repository and submit pull requests. You can also open an issue if you find any bugs or have suggestions for further improvements.
